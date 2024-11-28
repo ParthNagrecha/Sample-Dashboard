@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instance Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Sidebar and Main Content -->
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-64 bg-gray-200">
+      <div class="px-4 py-6">
+        <h1 class="text-xl font-bold text-orange-600">Setup Boxs</h1>
+        <nav class="mt-6">
+          <ul>
+            <li class="py-2"><a href="dashboard.html" class="block text-gray-700 hover:text-orange-500">Dashboard</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 font-bold hover:text-orange-500">Instances</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Compute</a></li>
+            <li class="py-2"><a href="Nodes.html" class="block text-gray-700 hover:text-orange-500">Nodes</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Storage</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Database</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Network</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Licenses</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Apps</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Billing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 bg-white">
+      <!-- Header -->
+      <div class="flex justify-between items-center px-6 py-4 bg-gray-100 border-b">
+        <div>
+          <h2 class="text-xl font-semibold">Instances</h2>
+        </div>
+        <div class="flex space-x-4">
+          <button class="text-orange-500">🔔</button>
+          <button class="text-orange-500">🔲</button>
+          <button class="text-orange-500">👤</button>
+          <span class="text-gray-600">Chennai</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="p-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <input type="text" placeholder="Find an instance..." class="border px-3 py-2 rounded w-64">
+            <button class="text-gray-500">⚙</button>
+          </div>
+          <div class="space-x-4">
+            <button class="bg-orange-500 text-white px-4 py-2 rounded">Launch Instance</button>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded">Create Instance</button>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="mt-6 border rounded">
+          <table class="w-full table-auto">
+            <thead class="bg-gray-100 border-b">
+              <tr>
+                <th class="py-2 px-4 text-left">Name</th>
+                <th class="py-2 px-4 text-left">Instance ID</th>
+                <th class="py-2 px-4 text-left">Instance State</th>
+                <th class="py-2 px-4 text-left">Instance Type</th>
+                <th class="py-2 px-4 text-left">Status Check</th>
+                <th class="py-2 px-4 text-left">Alarm Status</th>
+                <th class="py-2 px-4 text-left">Availability Zone</th>
+                <th class="py-2 px-4 text-left">Public IPv4 DNS</th>
+                <th class="py-2 px-4 text-left">Elastic IP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="9" class="text-center py-4 text-gray-500">No matching instances found</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-6 flex justify-between items-center text-sm text-gray-600">
+          <p>Search an Instance</p>
+          <button class="text-gray-500">⚙</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

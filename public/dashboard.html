@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-64 bg-gray-200">
+      <div class="px-4 py-6">
+        <h1 class="text-xl font-bold text-orange-600">Setup Boxes</h1>
+        <nav class="mt-6">
+          <ul>
+            <li class="py-2"><a href="#" class="block text-gray-700 font-bold hover:text-orange-500">Dashboard</a></li>
+            <li class="py-2"><a href="instance.html" class="block text-gray-700 hover:text-orange-500">Instances</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Compute</a></li>
+            <li class="py-2"><a href="Nodes.html" class="block text-gray-700 hover:text-orange-500">Nodes</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Storage</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Database</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Network</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Licenses</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Apps</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Billing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1">
+      <!-- Header -->
+      <div class="flex justify-between items-center px-6 py-4 bg-gray-100 border-b">
+        <h2 class="text-xl font-semibold">My Dashboard</h2>
+        <div class="flex items-center space-x-4">
+          <button class="text-orange-600">🔔</button>
+          <button class="text-orange-600">🔲</button>
+          <button class="text-orange-600">👤</button>
+          <span class="text-gray-600">Chennai</span>
+        </div>
+      </div>
+
+      <!-- Dashboard Content -->
+      <div class="p-6 grid grid-cols-4 gap-4">
+        <!-- Left Section -->
+        <div class="col-span-3 space-y-4">
+          <!-- Widgets -->
+          <div class="grid grid-cols-3 gap-4">
+            <div class="h-24 bg-gray-200 rounded"></div>
+            <div class="h-24 bg-gray-200 rounded"></div>
+            <div class="h-24 bg-gray-200 rounded"></div>
+            <div class="h-24 bg-gray-200 rounded"></div>
+            <div class="h-24 bg-gray-200 rounded"></div>
+            <div class="h-24 bg-gray-200 rounded"></div>
+          </div>
+
+          <!-- Security and Notifications -->
+          <div class="bg-white p-4 border rounded">
+            <h3 class="text-orange-600 font-semibold">Security & Notification</h3>
+            <p class="mt-2 text-gray-600">No Notifications to Display</p>
+          </div>
+
+          <!-- Activity Timeline -->
+          <div class="bg-white p-4 border rounded">
+            <h3 class="text-orange-600 font-semibold">Activity Timeline</h3>
+            <p class="mt-2 text-gray-600">No Ongoing Activity</p>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-span-1 space-y-4">
+          <!-- Monthly Cost Analysis -->
+          <div class="bg-white p-4 border rounded">
+            <h3 class="text-orange-500 font-semibold text-center">Monthly Cost Analysis</h3>
+            <div class="mt-4 h-48 bg-gray-100 flex justify-center items-center">
+              <p class="text-gray-400">[Graph Placeholder]</p>
+            </div>
+            <p class="text-sm text-center text-gray-600 mt-2">
+              NOTE: This Cost Analysis depicts the usage of all services in the last one year
+            </p>
+          </div>
+
+          <!-- Monitoring Alerts -->
+          <div class="bg-white p-4 border rounded">
+            <h3 class="text-orange-600 font-semibold">Monitoring Alerts</h3>
+            <table class="mt-2 w-full text-sm text-left">
+              <thead class="bg-gray-100 text-gray-700">
+                <tr>
+                  <th class="py-2 px-2">Date & Time</th>
+                  <th class="py-2 px-2">Alert Name</th>
+                  <th class="py-2 px-2">Severity Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" class="text-center py-4 text-gray-500">No Alerts are available</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

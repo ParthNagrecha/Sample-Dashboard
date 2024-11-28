@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Nodes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-64 bg-gray-200">
+      <div class="px-4 py-6">
+        <h1 class="text-xl font-bold text-orange-500">Setup Boxes</h1>
+        <nav class="mt-6">
+          <ul>
+            <li class="py-2"><a href="dashboard.html" class="block text-gray-700 hover:text-orange-500">Dashboard</a></li>
+            <li class="py-2"><a href="instance.html" class="block text-gray-700 hover:text-orange-500">Instances</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Compute</a></li>
+            <li class="py-2"><a href="Nodes.html" class="block text-gray-700 font-bold hover:text-orange-500">Nodes</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Storage</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Database</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Network</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Licenses</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Apps</a></li>
+            <li class="py-2"><a href="#" class="block text-gray-700 hover:text-orange-500">Billing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1">
+      <!-- Header -->
+      <div class="flex justify-between items-center px-6 py-4 bg-gray-100 border-b">
+        <h2 class="text-xl font-semibold">Manage Nodes</h2>
+        <div class="flex items-center space-x-4">
+          <button class="text-orange-500">🔔</button>
+          <button class="text-orange-500">🔲</button>
+          <button class="text-orange-500">👤</button>
+          <span class="text-gray-600">Chennai</span>
+        </div>
+      </div>
+
+      <!-- Nodes Content -->
+      <div class="p-6">
+        <!-- Filters -->
+        <div class="flex items-center space-x-4 mb-4">
+          <select class="border-gray-300 rounded px-4 py-2">
+            <option>All Groups</option>
+          </select>
+          <select class="border-gray-300 rounded px-4 py-2">
+            <option>Filter By Tag</option>
+          </select>
+          <button class="text-gray-500 hover:text-gray-800">🔍</button>
+          <button class="text-gray-500 hover:text-gray-800">🔄</button>
+        </div>
+
+        <!-- Table -->
+        <div class="bg-white rounded shadow overflow-hidden">
+          <table class="w-full border-collapse text-left">
+            <thead class="bg-gray-200 text-gray-700">
+              <tr>
+                <th class="px-4 py-2">Node Name</th>
+                <th class="px-4 py-2">Public IP</th>
+                <th class="px-4 py-2">Private IP</th>
+                <th class="px-4 py-2">Backup</th>
+                <th class="px-4 py-2">BitNinja</th>
+                <th class="px-4 py-2">State</th>
+                <th class="px-4 py-2">Access Console</th>
+                <th class="px-4 py-2">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t">
+                <td class="px-4 py-2">C6-16GB--707</td>
+                <td class="px-4 py-2">165.12.12.3</td>
+                <td class="px-4 py-2">172.16.119.134</td>
+                <td class="px-4 py-2 text-orange-500 cursor-pointer">Activate</td>
+                <td class="px-4 py-2 text-orange-500 cursor-pointer">Activate</td>
+                <td class="px-4 py-2 flex items-center">
+                  <span class="w-3 h-3 bg-green-500 rounded-full inline-block mr-2"></span>
+                  Running
+                </td>
+                <td class="px-4 py-2">
+                  <button class="bg-gray-800 text-white px-3 py-1 rounded">Console</button>
+                </td>
+                <td class="px-4 py-2">
+                  <button class="bg-orange-500 text-white px-3 py-1 rounded">Actions</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-4 flex items-center justify-between">
+          <span>Items Per Page: </span>
+          <select class="border-gray-300 rounded px-2 py-1">
+            <option>5</option>
+            <option>10</option>
+            <option>20</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
